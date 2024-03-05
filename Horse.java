@@ -4,8 +4,9 @@ class Horse{
 	
 	void run(){
 		System.out.println(this.name + " Horse Running ");
+		System.out.println(this);
 	}
-	public static void main(String []args);
+	public static void main(String []args)
 	{
 		Horse h1 = new Horse();
 		h1.name = "Chetak";
