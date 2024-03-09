@@ -8,28 +8,22 @@ public class Array {
         n = sc.nextInt();
         int[] a = new int[n];
         System.out.println("Enter the N array elements ");
-        for(int i=0 ;i<=a.length-1;i++){
+        for (int i = 0; i <= a.length - 1; i++) {
             a[i] = sc.nextInt();
         }
 
         System.out.println("Enter number to be find");
         int x;
-        x=sc.nextInt();
+        x = sc.nextInt();
+        for (int i = 0; i <= a.length - 1; i++) {
+            if (a[i] == x) {
+                System.out.println("Array");
+                System.out.println("Found at  " + (i + 1));
+            }
 
-
-        
-        int count=0;
-        for(int i=0 ;i<=a.length-1;i++){
-           if (a[i] == x) {
-            System.out.println("Array");
-            System.out.println("Found at  " + (i+1));
-           }
-           
         }
         
+        
 
-        
-       
-        
     }
 }

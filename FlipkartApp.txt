@@ -1,0 +1,51 @@
+class FlipkartProduct{
+	
+ 	String pname;
+	double price;
+	int qty;
+
+	void addToCart(){
+	
+	System.out.println("Product Added to cart");
+	}
+	
+
+	void makePayment(){
+	
+	System.out.println("Payment has been done");
+	}
+	
+}
+
+class ShoeProduct extends FlipkartProduct
+{
+	
+	
+}
+
+
+class ClothProduct extends FlipkartProduct
+{
+	
+	
+}
+
+class FlipkartApp{
+
+ public static void main (String []args){
+	ShoeProduct p1 = new ShoeProduct();
+	p1.pname = "NikeAir";
+
+	p1.price = "35000";
+
+	p1.qty = 4;
+
+	p1.addToCart();
+	
+	p1.makePayment();
+
+ }
+
+}
+
+
